@@ -2,7 +2,7 @@
 //  ToolTipView.h
 //  parserApp
 //
-//  Created by Ekta Bhattarai on 25/5/19.
+//  Created by Sangam Shrestha on 25/5/19.
 //  Copyright © 2019 testOrg. All rights reserved.
 //
 

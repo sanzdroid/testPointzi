@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MainVC : UIViewController
 
+
+-(void)apiCall : (NSString*)urlString;
 +(void)completeData : (UIView *)view;
 
 @end
