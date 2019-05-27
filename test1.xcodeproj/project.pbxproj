@@ -27,7 +27,7 @@
 		58210DAB229A44CB00AEAAA3 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 58210D73229A3B2400AEAAA3 /* MainVC.m */; };
 		58210DAD229A44DF00AEAAA3 /* test1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58210D48229937FC00AEAAA3 /* test1.framework */; };
 		58210DCC229A510100AEAAA3 /* ToolTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58210DC9229A510100AEAAA3 /* ToolTipView.m */; };
-		58210DCD229A510100AEAAA3 /* ToolTipView.xib in Headers */ = {isa = PBXBuildFile; fileRef = 58210DCA229A510100AEAAA3 /* ToolTipView.xib */; settings = {ATTRIBUTES = (Public, ); }; };
+		58210DCD229A510100AEAAA3 /* ToolTipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58210DCA229A510100AEAAA3 /* ToolTipView.xib */; settings = {ATTRIBUTES = (Public, ); }; };
 		58210DCE229A510100AEAAA3 /* ToolTipView.h in Headers */ = {isa = PBXBuildFile; fileRef = 58210DCB229A510100AEAAA3 /* ToolTipView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -125,7 +125,6 @@
 				58210DA6229A441400AEAAA3 /* MainVC.h in Headers */,
 				58210D59229937FC00AEAAA3 /* test1.h in Headers */,
 				58210DCE229A510100AEAAA3 /* ToolTipView.h in Headers */,
-				58210DCD229A510100AEAAA3 /* ToolTipView.xib in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58210DCD229A510100AEAAA3 /* ToolTipView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

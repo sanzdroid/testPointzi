@@ -2,7 +2,7 @@
 //  MainVC.h
 //  parserApp
 //
-//  Created by Sangam Shrestha on 24/5/19.
+//  Created by Ekta Bhattarai on 24/5/19.
 //  Copyright © 2019 testOrg. All rights reserved.
 //
 
@@ -12,8 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MainVC : UIViewController
 
-
--(void)apiCall : (NSString*)urlString;
 +(void)completeData : (UIView *)view;
 
 @end

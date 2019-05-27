@@ -7,15 +7,11 @@
 //
 
 #import "MainVC.h"
-#import "Owner.h"
-#import "Description.h"
 #import "ToolTipView.h"
 
 #define kAppTestUrl [NSURL URLWithString:@"https://dummyapi.io/api/post?limit=1"]
 
 @interface MainVC ()
-@property (nonatomic,strong) NSMutableArray<Description *> *descriptions;
-@property (nonatomic,strong) NSMutableArray<Owner *> *owners;
 @end
 
 @implementation MainVC
@@ -25,15 +21,6 @@
     // Do any additional setup after loading the view.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 +(void)completeData : (UIView *)view{
     NSError* error;
     NSData *responseData = [NSData dataWithContentsOfURL: kAppTestUrl];
@@ -51,10 +38,11 @@
             NSString* nameTitle = [owner objectForKey:@"nameTitle"];
             NSString* oImage = [owner objectForKey:@"image"];
             
-            NSBundle *bundle = [NSBundle bundleForClass:[MainVC class]];
+            NSBundle *bundle = [NSBundle bundleForClass:[ToolTipView class]];
             UINib *nib = [UINib nibWithNibName:@"ToolTipView" bundle:bundle];
             ToolTipView *toolTipView = [[nib instantiateWithOwner:self options:nil] objectAtIndex:0];
-            toolTipView.layer.cornerRadius = 10.0;
+            toolTipView.backgroundView.layer.cornerRadius = 10.0;
+            toolTipView.backgroundColor = [UIColor clearColor];
             toolTipView.center = view.center;
             
             NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:image]];
